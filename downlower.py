@@ -116,10 +116,16 @@ class App:
         is_audio = "MP3" in self.format_var.get()
 
         opts = {
-            'format': fmt,
+            'format': 'bestvideo+bestaudio/best',
+            'merge_output_format': 'mp4',
             'outtmpl': os.path.join(self.output_dir, '%(title)s.%(ext)s'),
             'ffmpeg_location': FFMPEG_PATH,
             'noplaylist': True,
+            'postprocessors': [{
+                'key': 'FFmpegVideoConvertor',
+                'preferedformat': 'mp4',
+            }],
+            'postprocessor_args': ['-c:a', 'aac'],  # ← convierte audio a AAC
             'progress_hooks': [self.progress_hook],
         }
 
