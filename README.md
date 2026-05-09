@@ -31,7 +31,7 @@ pip install yt-dlp
 
 3. Download ffmpeg from [this link](https://github.com/BtbN/FFmpeg-Builds/releases) and extract it on your PC.
 
-4. Open `downloader.py` and edit the ffmpeg path line:
+4. Open `downlower.py` and edit the ffmpeg path line:
 
 ```python
 FFMPEG_PATH = r'C:\path\to\your\ffmpeg\bin'
@@ -40,7 +40,7 @@ FFMPEG_PATH = r'C:\path\to\your\ffmpeg\bin'
 ## Usage
 
 ```bash
-python downloader_gui.py
+python downlower.py
 ```
 
 1. Paste the video URL
