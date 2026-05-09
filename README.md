@@ -31,7 +31,7 @@ pip install yt-dlp
 
 3. Download ffmpeg from [this link](https://github.com/BtbN/FFmpeg-Builds/releases) and extract it on your PC.
 
-4. Open `downloader_gui.py` and edit the ffmpeg path line:
+4. Open `downloader.py` and edit the ffmpeg path line:
 
 ```python
 FFMPEG_PATH = r'C:\path\to\your\ffmpeg\bin'
